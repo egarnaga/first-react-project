@@ -4,7 +4,7 @@ import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
   return (
-    <div className={classes.content}>
+    <div>
       <div>
         <img src="https://openimagedenoise.github.io/images/moana_16spp_oidn.jpg"/>
       </div>
