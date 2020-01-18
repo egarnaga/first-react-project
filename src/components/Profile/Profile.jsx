@@ -1,17 +1,14 @@
 import React from 'react';
 import classes from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = () => {
+const Profile = (props) => {
+
   return (
     <div>
-      <div>
-        <img src="https://openimagedenoise.github.io/images/moana_16spp_oidn.jpg"/>
-      </div>
-      <div>
-        ava + description
-      </div>
-      <MyPosts />
+      <ProfileInfo />
+      <MyPosts posts={props.posts} />
     </div>
   );
 }
